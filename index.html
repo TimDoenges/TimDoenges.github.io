@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tim Dönges Event Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1515162305284-8e6920b6f67c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .hero a {
+      background: #ff6600;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .services, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .contact button {
+      background: #ff6600;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Tim Dönges</strong> Event Management</div>
+    <nav>
+      <a href="#start">Start</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="start">
+    <h1>Events mit Leidenschaft</h1>
+    <p>Planung, Technik & Stimmung – alles aus einer Hand.</p>
+    <a href="#kontakt">Kontakt aufnehmen</a>
+  </div>
+
+  <section id="leistungen">
+    <h2>Unsere Leistungen</h2>
+    <div class="services">
+      <div class="card"><strong>🎧 DJ-Service</strong><br> Passende Musik für jeden Anlass</div>
+      <div class="card"><strong>🔊 Tontechnik</strong><br> Klare Sounds für starke Events</div>
+      <div class="card"><strong>💡 Lichtdesign</strong><br> Stimmung durch moderne Lichttechnik</div>
+      <div class="card"><strong>📋 Eventplanung</strong><br> Von der Idee bis zur Umsetzung</div>
+      <div class="card"><strong>🎉 Feiern & Festivals</strong><br> Ob privat, öffentlich oder geschäftlich</div>
+    </div>
+  </section>
+
+  <section id="ueber-uns">
+    <h2>Über uns</h2>
+    <p style="max-width: 700px; margin: auto; text-align: center;">
+      Ich bin Tim – Event-Enthusiast aus dem Saarland.  
+      Mit Leidenschaft, Erfahrung und dem richtigen Riecher für gute Stimmung mache ich jede Veranstaltung zu etwas Besonderem.  
+      Keine 0815-Feiern – bei uns wird geliefert, was versprochen wird!
+    </p>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?dj,event" alt="Eventfoto 1">
+      <img src="https://source.unsplash.com/400x300/?party,lights" alt="Eventfoto 2">
+      <img src="https://source.unsplash.com/400x300/?concert,crowd" alt="Eventfoto 3">
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="E-Mail" required>
+      <textarea rows="5" placeholder="Nachricht"></textarea>
+      <button type="submit">Kontakt aufnehmen</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Tim Dönges Event Management • Impressum • Datenschutz
+  </footer>
+
+</body>
+</html>
